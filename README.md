@@ -1,3 +1,6 @@
+> [!WARNING]
+> 🍐 PearPass is currently paused from active development, so please use at your own caution until further notice.
+
 # pear-apps-lib-ui-react-hooks
 
 A collection of React hooks for Pearpass applications that simplify form handling, state management, and UI interactions.
