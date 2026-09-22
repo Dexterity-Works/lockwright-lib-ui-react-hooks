@@ -24,7 +24,7 @@ Community fork of PearPass (Apache 2.0). Not affiliated with or endorsed by Teth
 
 ## Security Notice
 
-Imports stay `@tetherto/pear-apps-lib-ui-react-hooks`. That npm name is not this fork if you install it from the npm registry.
+The package name is `lockwright-lib-ui-react-hooks`.
 
 ## Installation
 
@@ -37,7 +37,7 @@ npm install git+https://github.com/Dexterity-Works/lockwright-lib-ui-react-hooks
 ### useForm
 
 ```jsx
-import { useForm } from '@tetherto/pear-apps-lib-ui-react-hooks';
+import { useForm } from 'lockwright-lib-ui-react-hooks';
 
 const MyForm = () => {
     const validate = (values) => {
@@ -68,7 +68,7 @@ const MyForm = () => {
 ### useDebounce
 
 ```jsx
-import { useDebounce } from '@tetherto/pear-apps-lib-ui-react-hooks';
+import { useDebounce } from 'lockwright-lib-ui-react-hooks';
 
 const SearchComponent = () => {
     const [searchTerm, setSearchTerm] = useState('');
@@ -92,7 +92,7 @@ const SearchComponent = () => {
 ### useThrottle
 
 ```jsx
-import { useThrottle } from '@tetherto/pear-apps-lib-ui-react-hooks';
+import { useThrottle } from 'lockwright-lib-ui-react-hooks';
 
 const InfiniteScroll = () => {
     const handleScroll = () => {
@@ -114,7 +114,7 @@ const InfiniteScroll = () => {
 ### useCountDown
 
 ```jsx
-import { useCountDown } from '@tetherto/pear-apps-lib-ui-react-hooks';
+import { useCountDown } from 'lockwright-lib-ui-react-hooks';
 
 const Timer = () => {
     const timeRemaining = useCountDown({
