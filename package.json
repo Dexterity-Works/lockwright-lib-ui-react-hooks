@@ -8,8 +8,7 @@
   "scripts": {
     "lint": "eslint --fix src",
     "lint:fix": "eslint --fix src",
-    "test": "jest",
-    "prepare": "husky || true"
+    "test": "jest"
   },
   "peerDependencies": {
     "react": ">=18.3.1",
