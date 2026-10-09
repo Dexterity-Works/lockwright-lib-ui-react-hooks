@@ -11,8 +11,14 @@
     "test": "jest"
   },
   "peerDependencies": {
+    "lockwright-lib-utils": "*",
     "react": ">=18.3.1",
     "react-dom": ">=18.3.1"
+  },
+  "peerDependenciesMeta": {
+    "lockwright-lib-utils": {
+      "optional": true
+    }
   },
   "devDependencies": {
     "@babel/core": "^7.26.10",

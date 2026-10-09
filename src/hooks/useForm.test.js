@@ -1,15 +1,19 @@
-jest.mock('lockwright-utils-generate-unique-id', () => {
-  let idCounter = 1
-  return {
-    generateUniqueId: () => `unique-id-${idCounter++}`,
-    reset: () => {
-      idCounter = 1
+jest.mock(
+  'lockwright-lib-utils/generate-unique-id',
+  () => {
+    let idCounter = 1
+    return {
+      generateUniqueId: () => `unique-id-${idCounter++}`,
+      reset: () => {
+        idCounter = 1
+      }
     }
-  }
-})
+  },
+  { virtual: true }
+)
 
 import { renderHook, act } from '@testing-library/react'
-import * as uniqueIdModule from 'lockwright-utils-generate-unique-id'
+import * as uniqueIdModule from 'lockwright-lib-utils/generate-unique-id'
 
 import { useForm } from './useForm'
 
